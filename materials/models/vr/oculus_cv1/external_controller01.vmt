@@ -1,0 +1,4 @@
+"UnlitGeneric" // replace with PBR when you have lighting
+{
+	"$basetexture" "models/vr/oculus_cv1/external_controller01_col"
+}
