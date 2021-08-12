@@ -1,4 +1,28 @@
-"UnlitGeneric" // replace with PBR when you have lighting
+"VertexLitGeneric"
 {
 	"$basetexture" "models/vr/oculus_cv1/external_controller01_col"
+	"$bumpmap" "dev/bump_normal"
+	
+	// mask doesn't work with phong on (in ASW at least)
+	//"$envmap" "env_cubemap"
+	//"$envmapmask" "models/vr/oculus_cv1/external_controller01_spec"
+	//$normalmapalphaenvmapmask 1
+	//$envmaptint	"[.1 .1 .1]"
+	
+	"$model" "1"
+	"$halflambert" "1"
+	
+	// "$surfaceprop" "default"
+	// "$nodecal" "1"
+	
+	$phong "1"
+	// $phongexponent		1
+	$phongexponenttexture   "models/vr/oculus_cv1/external_controller01_spec"
+	// $phongboost		50.0
+	//$phongfresnelranges	"[0 0.5 1]"
+	
+	$rimlight "1"
+	$rimlightexponent       8
+	$rimlightboost          0
+	// $rimlightboost          0.5
 }
